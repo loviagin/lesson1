@@ -11,6 +11,10 @@
 		864B62492C1A063B00877046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B62482C1A063B00877046 /* ContentView.swift */; };
 		864B624B2C1A063C00877046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B624A2C1A063C00877046 /* Assets.xcassets */; };
 		864B624E2C1A063C00877046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B624D2C1A063C00877046 /* Preview Assets.xcassets */; };
+		864B62582C1A07AA00877046 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B62572C1A07AA00877046 /* HomeView.swift */; };
+		864B625A2C1A0A6D00877046 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B62592C1A0A6D00877046 /* HomeViewModel.swift */; };
+		864B625C2C1A0B4300877046 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B625B2C1A0B4300877046 /* Thing.swift */; };
+		864B625E2C1A17EE00877046 /* AddThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B625D2C1A17EE00877046 /* AddThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		864B62482C1A063B00877046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		864B624A2C1A063C00877046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864B624D2C1A063C00877046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		864B62572C1A07AA00877046 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		864B62592C1A0A6D00877046 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		864B625B2C1A0B4300877046 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		864B625D2C1A17EE00877046 /* AddThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		864B62452C1A063B00877046 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				864B62562C1A079900877046 /* ViewModel */,
+				864B62552C1A079300877046 /* Model */,
+				864B62542C1A078900877046 /* View */,
 				864B62462C1A063B00877046 /* TestApp.swift */,
 				864B62482C1A063B00877046 /* ContentView.swift */,
 				864B624A2C1A063C00877046 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				864B624D2C1A063C00877046 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		864B62542C1A078900877046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				864B62572C1A07AA00877046 /* HomeView.swift */,
+				864B625D2C1A17EE00877046 /* AddThingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		864B62552C1A079300877046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864B625B2C1A0B4300877046 /* Thing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		864B62562C1A079900877046 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				864B62592C1A0A6D00877046 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864B62582C1A07AA00877046 /* HomeView.swift in Sources */,
 				864B62492C1A063B00877046 /* ContentView.swift in Sources */,
 				864B62472C1A063B00877046 /* TestApp.swift in Sources */,
+				864B625C2C1A0B4300877046 /* Thing.swift in Sources */,
+				864B625A2C1A0A6D00877046 /* HomeViewModel.swift in Sources */,
+				864B625E2C1A17EE00877046 /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
